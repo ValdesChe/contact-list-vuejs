@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app container-fluid">
     <router-view/>
   </div>
 </template>
@@ -9,3 +9,6 @@ export default {
   name: 'App'
 }
 </script>
+
+<style src="./assets/style.css">
+</style>
