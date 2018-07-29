@@ -1,19 +1,16 @@
 <template >
 
- <section class="section">
-    <div class="ui warning message">
-      <i class="close icon"></i>
-      <div class="header">
-        You must register before you can do that!
-      </div>
-      Visit our sxxx page, then try again
-    </div>
-  </section>
+  <div>
+      Lorem  
+      Lorem  
+      Lorem  
+      Lorem  
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'home',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
