@@ -5,19 +5,29 @@
         <h1 class="ui  header horizontal  divider violet ">Gérez vos AligatoRs efficacement !</h1>
     </div>
     <div class="six wide tablet blue eight wide computer column">
-      <div class="button ui secondary" @click="createContact">Creer un contact</div>
+      <contact-creator contact="">
+      </contact-creator>
     </div>
-    <div class="six wide tablet olive eight wide computer column"></div>
+    <div class="six wide tablet olive eight wide computer column">
+      {{ contacts }}
+    </div>
 
   </div>
 </template>
 
 <script>
+
+import ContactCreator from './ContactCreator';
+
+import Contact from './../classes/Contact.js';
+
 export default {
   name: 'home',
+  components:{ContactCreator},
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      
+      contacts: []
     }
   }
   
