@@ -26,7 +26,7 @@
           <div class="field">
             <label>Phone Number</label>
            <div class="ui left big labeled input">
-              <input placeholder="Find domain" type="text">
+              <input placeholder="Phone number"  type="text"  v-model="newContact.phone">
               <div class="ui  dropdown label">
                 <div class="text">+ 212</div>
                 <i class="dropdown icon"></i>
@@ -37,7 +37,7 @@
           <div class="field">
             <label>Town</label>
             <div class="ui left big icon input">
-              <input type="text" > 
+              <input type="text" placeholder="Ville" v-model="newContact.city"> 
               <i class="city icon"></i>
             </div>
           </div>
@@ -47,7 +47,7 @@
               <div class="ui label">
                 http://
               </div>
-              <input placeholder="mysite.com" type="text">
+              <input placeholder="your website url" v-model="newContact.website" type="text">
             </div>
           </div>
           <div class="ui green submit big button" @click="addContact" v-show="!editing">Create</div>
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-      {{newContact}}
+    {{ contacts }}
   </div>
 </template>
 
